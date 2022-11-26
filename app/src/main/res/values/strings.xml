@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Two Activities</string>
+    <string name="button_main_string">Send</string>
+    <string name="button_main_string2">Reply</string>
+    <string name="activity2_name">Second Activity</string>
+    <string name="message_received">Message Received</string>
+    <string name="reply_received">Reply Received</string>
+    <string name="edit_text_main_hint">Enter Your Message Here</string>
+    <string name="edit_text_main_hint2">Enter Your Reply Here</string>
+    <string name="placeholder">Lorem Ipsum Dare Notruim Estderes Materis</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_header"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:text="@string/message_received"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    >
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginTop="@dimen/margin_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_header"
+    >
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_main_string2"
+        android:id="@+id/button_main2"
+        android:onClick="returnReply"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:layout_marginRight="@dimen/margin_horizontal"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    >
+    </Button>
+
+    <EditText
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_text_main_hint2"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:id="@+id/editTexTMain2"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_main2"
+        app:layout_constraintStart_toStartOf="parent"
+    >
+    </EditText>
+
+</android.support.constraint.ConstraintLayout>
